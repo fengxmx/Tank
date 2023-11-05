@@ -30,7 +30,7 @@ namespace MotionFramework.Network
 
 			if (_webRequest == null)
 			{
-				_webRequest = UnityWebRequest.Post(URL, post);
+				_webRequest = UnityWebRequest.PostWwwForm(URL, post);
 				SendRequestInternal(timeout);
 			}
 		}
